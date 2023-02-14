@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: aquamarine;
+}
+.container{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 20px 25px rgba(0,0,0.3);
+    overflow: hidden;
+    max-width: 100%;
+    width: 350px;
+
+   
+}
+
+form{
+    padding: 30px 40px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border: 2px solid gray;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 14px;
+    width: 100%;
+    
+}
+.form-control input:focus{
+    outline: none;
+    border-color: rgb(25, 5, 250);
+}
+.form-control.success input{
+    border-color: green;
+    visibility: visible;
+}
+.form-control.error input {
+    border-color: red;
+    visibility: visible;
+}
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+
+}
+.form-control.success i.fa-duotone{
+    /* display: none; */
+    color: green;
+    visibility: visible;
+}
+.form-control.error  i.fa-circle-exclamation{ 
+color: red;
+visibility: visible;
+}
+.form-control small{
+    color: firebrick;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    visibility: hidden;
+
+}
+.form-control.error small{
+    color: firebrick;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    visibility: visible;
+
+}
+.form-control.success small{
+    visibility:hidden;
+
+}
+.form button{
+     background-color: blue;
+     border: none;
+     height: 45px;
+     width: 100%;
+     color: white;
+     /* display: block; */
+     font-size: 16px;
+     margin-top: 20px;
+     padding: 10px;
+     border-radius: 4px;
+    }
+ 
